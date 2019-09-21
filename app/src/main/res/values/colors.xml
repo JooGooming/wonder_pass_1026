@@ -7,4 +7,8 @@
     <color name="windowBackground">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="colorMyPage">#fcf2f1</color>
+
+    <color name="colorCoral">#f36563</color>
+    <color name="colorLightCoral">#fabbb6</color>
+    <color name="colorGray">#777777</color>
 </resources>

@@ -1,9 +1,12 @@
 package com.example.wonder_pass;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -19,12 +22,12 @@ public class MainActivity extends AppCompatActivity {
 
     private ViewPager mViewPager;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d(TAG, "onCreate: Starting.");
-
         mSectionsPageAdapter = new SectionsPageAdapter(getSupportFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
@@ -35,8 +38,6 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
-
-
         // 우리 앱에서는 안 쓰는데 혹시 몰라서 놔둠
         FloatingActionButton fab = findViewById(R.id.fab);
 
@@ -45,8 +46,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+
             }
         });
+
+
     }
 
     // create SectionsPagerAdapter and add the fragments to the SectionsPagerAdapter
@@ -58,5 +62,8 @@ public class MainActivity extends AppCompatActivity {
         adapter.addFragment(new Tab4Fragment(), "마이페이지");
         viewPager.setAdapter(adapter);
     }
+
+
+
 
 }
