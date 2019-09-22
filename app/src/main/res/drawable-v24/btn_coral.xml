@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!--버튼 눌렸을때-->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="100dp"/>
+            <solid android:color="@color/colorLightCoral"/>
+        </shape>
+    </item>
+
+    <!--정상일때-->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="100dp"/>
+            <solid android:color="@color/colorCoral"/>
+        </shape>
+    </item>
+
+    <!--버튼이 동작하지 않을때, 사용불가일때-->
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="100dp"/>
+            <solid android:color="@color/colorGray"/>
+        </shape>
+    </item>
+
+</selector>

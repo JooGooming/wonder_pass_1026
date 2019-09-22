@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 
@@ -58,6 +60,7 @@ public class Tab4Fragment extends Fragment {
 //                dialogInterface.cancel();
             }
         }).setNegativeButton("나가기", new DialogInterface.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 //나가기 클릭 ->  앱 종료
@@ -68,7 +71,7 @@ public class Tab4Fragment extends Fragment {
         AlertDialog alert = alt_bld.create();
 
         // 대화창 제목 설정
-        alert.setTitle("탈퇴 여부 확인");
+        alert.setTitle("로그아웃");
 
         alert.setIcon(R.drawable.logo);
 
