@@ -30,6 +30,8 @@ public class Tab1Fragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+
         View view = inflater.inflate(R.layout.tab1_password,container,false);
 
         password = (TextView) view.findViewById(R.id.textView2);

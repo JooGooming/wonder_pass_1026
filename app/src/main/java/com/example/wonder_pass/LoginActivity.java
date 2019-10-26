@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import com.google.android.material.textfield.TextInputEditText;
 
@@ -35,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
         TextInputEditText_password = findViewById(R.id.TextInputEditText_password);
         LinearLayout_login = findViewById(R.id.LinearLayout_login);
 
-        //1. 값을 가져온다. - 검사( wonderpass123 / 1234)
+        //1. 값을 가져온다. - 검사( wonder12 / 1234)
         //2. 클릭을 감지한다.
         //3. 1번의 값을 다음 액티비티로 넘긴다.
 
@@ -93,12 +94,16 @@ public class LoginActivity extends AppCompatActivity {
                 String id = TextInputEditText_ID.getText().toString();
                 String password = TextInputEditText_password.getText().toString();
 
-                //여기(MA)에서 LRA클래스로 넘긴다.
+               // 여기(MA)에서 MainActivity클래스로 넘긴다.
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                intent.putExtra("id", id);
-                intent.putExtra("password",password);
+//                intent.putExtra("id", id);
+//                intent.putExtra("password",password);
                 //~~를 실행해라!
                 startActivity(intent);
+
+
+
+
 
             }
         });

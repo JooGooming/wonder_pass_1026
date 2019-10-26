@@ -16,15 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginResultActivity"/>
-        <activity android:name=".EditMemoActivity"/>
-        <activity
-            android:name=".UserInfoActivity" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+        <activity android:name=".EditMemoActivity"/>
+        <activity android:name=".Tab4Info_changePW" android:parentActivityName=".Tab4InfoActivity"/>
+        <activity android:name=".Tab4LoginRecordActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Tab4PhoneAuthActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Tab4DropActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Tab4InfoActivity" android:parentActivityName=".MainActivity"/>
+
     </application>
 
 </manifest>

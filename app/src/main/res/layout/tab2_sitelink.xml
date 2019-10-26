@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.main.PlaceholderFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mysite_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="내가 가입한 사이트"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/mysite_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:text="사이트 아이콘을 클릭하면 해당 사이트가 열립니다."
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_margin="15dp">
+
+        <Button
+            android:id="@+id/button_naver"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/logo_naver"
+            android:text="네이버" />
+        <Button
+            android:id="@+id/button_daum"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/logo_daum"
+            android:text="다음" />
+        <Button
+            android:id="@+id/button_11st"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/logo_11st"
+            android:text="11번가" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_margin="15dp">
+
+        <Button
+            android:id="@+id/button_cgv"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/logo_cgv"
+            android:text="CGV" />
+        <Button
+            android:id="@+id/button_google"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/logo_google"
+            android:text="Google" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -11,4 +11,8 @@
     <color name="colorCoral">#f36563</color>
     <color name="colorLightCoral">#fabbb6</color>
     <color name="colorGray">#777777</color>
+
+    <color name="colorButton">#E74C3C</color>
+    <color name="gray">#A7A7A7</color>
+    <color name="colorLogo">#F36D63</color>
 </resources>

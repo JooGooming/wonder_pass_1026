@@ -9,18 +9,18 @@
         <item name="android:windowFullscreen">true</item>
     </style>
 
-    <!-- 액션바의 스타일-->
-    <style name="MyTheme" parent="@android:style/Theme.Holo.Light">
-        <item name="android:actionBarStyle">@style/MyTheme.ActionBarStyle</item>
-    </style>
+<!--    &lt;!&ndash; 액션바의 스타일&ndash;&gt;-->
+<!--    <style name="MyTheme" parent="@android:style/Theme.Holo.Light">-->
+<!--        <item name="android:actionBarStyle">@style/MyTheme.ActionBarStyle</item>-->
+<!--    </style>-->
 
-    <style name="MyTheme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
-        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
-    </style>
+<!--    <style name="MyTheme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">-->
+<!--        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>-->
+<!--    </style>-->
 
-    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
-        <item name="android:textColor">@color/black</item>
-    </style>
+<!--    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">-->
+<!--        <item name="android:textColor">@color/black</item>-->
+<!--    </style>-->
 
 
     <style name="AppTheme.NoActionBar">
